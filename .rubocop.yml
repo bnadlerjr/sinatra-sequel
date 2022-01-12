@@ -1,0 +1,26 @@
+require:
+    - rubocop-rake
+    - rubocop-performance
+    - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.6
+
+Layout/LineLength:
+  Max: 90
+
+Layout/SpaceAroundEqualsInParameterDefault:
+    EnforcedStyle: no_space
+
+Metrics/ClassLength:
+    Max: 150
+
+Metrics/MethodLength:
+    Max: 15
+
+Style/BlockDelimiters:
+    EnforcedStyle: braces_for_chaining
+
+Style/YodaCondition:
+    EnforcedStyle: require_for_equality_operators_only
