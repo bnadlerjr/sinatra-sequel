@@ -1,7 +1,7 @@
 require:
-    - rubocop-rake
-    - rubocop-performance
-    - rubocop-rspec
+  - rubocop-rake
+  - rubocop-performance
+  - rubocop-rspec
 
 AllCops:
   NewCops: enable
@@ -11,16 +11,35 @@ Layout/LineLength:
   Max: 90
 
 Layout/SpaceAroundEqualsInParameterDefault:
-    EnforcedStyle: no_space
+  EnforcedStyle: no_space
+
+Metrics/BlockLength:
+  IgnoredMethods:
+    - describe
+    - context
+    - it
 
 Metrics/ClassLength:
-    Max: 150
+  Max: 150
 
 Metrics/MethodLength:
-    Max: 15
+  Max: 15
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - and
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/NestedGroups:
+  Max: 5
 
 Style/BlockDelimiters:
-    EnforcedStyle: braces_for_chaining
+  EnforcedStyle: braces_for_chaining
 
 Style/YodaCondition:
-    EnforcedStyle: require_for_equality_operators_only
+  EnforcedStyle: require_for_equality_operators_only
