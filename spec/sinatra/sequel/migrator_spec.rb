@@ -4,7 +4,6 @@ RSpec.describe Sinatra::Sequel::Migrator do
   subject(:migrator) { described_class.new(database, migrations_path) }
 
   let(:log_output) { StringIO.new }
-  let(:fixtures_path) { File.join('spec', 'fixtures') }
   let(:database) { Sequel.connect('sqlite:///', loggers: [Logger.new(log_output)]) }
 
   describe '#check!' do

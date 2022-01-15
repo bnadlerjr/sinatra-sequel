@@ -9,8 +9,8 @@ module Sinatra
 
       def initialize(database, migrations_path)
         ::Sequel.extension :migration
-        @migrations_path = migrations_path
         @database = database
+        @migrations_path = migrations_path
       end
 
       # Checks for pending migrations and runs them if necessary.
