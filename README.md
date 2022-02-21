@@ -1,18 +1,17 @@
-# Sinatra::Sequel
+# Sinatra Sequel Extension
 
 ![Build Status](https://github.com/bnadlerjr/sinatra-sequel/actions/workflows/main.yml/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/75e09f25ee70d6858519/maintainability)](https://codeclimate.com/github/bnadlerjr/sinatra-sequel/maintainability)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sinatra/sequel`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[Sinatra](http://sinatrarb.com/) extension and Rake tasks for dealing with SQL databases using the [Sequel Gem](https://github.com/jeremyevans/sequel).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this this gem and a Sequel database adapter to your Sinatra application's `Gemfile`:
 
 ```ruby
 gem 'sinatra-sequel'
+gem 'sqlite3' # or any other adapter you wish
 ```
 
 And then execute:
@@ -24,8 +23,44 @@ Or install it yourself as:
     $ gem install sinatra-sequel
 
 ## Usage
+Sinatra Sequel is implemented as a [Sinatra Extension](http://sinatrarb.com/extensions-wild.html) and can be used with both classic and module applications. When the extension is registered by Sinatra, it attempts to automatically run any pending database migrations found in the `PROJECT_ROOT/db/migrate` folder.
 
-TODO: Write usage instructions here
+### Classic Application Example
+
+```
+require 'sinatra'
+require 'sinatra-sequel'
+require 'sqlite3'
+
+set :database, ''
+
+get '/' do
+  # The Sinatra Sequel extension makes a `database` helper available.
+  database[:users].all
+end
+```
+
+### Modular Application Example
+
+```
+require 'sinatra/base'
+require 'sinatra-sequel'
+require 'sqlite3'
+
+class MyApp < Sinatra::Base
+  register Sinatra::Sequel
+
+  set :database, ''
+  
+  get '/' do
+    # The Sinatra Sequel extension makes a `database` helper available.
+    database[:users].all
+  end
+end
+```
+
+### Rake Tasks
+TODO
 
 ## Development
 
