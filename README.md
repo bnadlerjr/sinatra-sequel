@@ -1,6 +1,6 @@
 # Sinatra::Sequel
 
-![Build Status](https://github.com/bnadlerjr/sinatra-sequel/actions/workflows/ruby.yml/badge.svg)
+![Build Status](https://github.com/bnadlerjr/sinatra-sequel/actions/workflows/main.yml/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/75e09f25ee70d6858519/maintainability)](https://codeclimate.com/github/bnadlerjr/sinatra-sequel/maintainability)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sinatra/sequel`. To experiment with that code, run `bin/console` for an interactive prompt.
