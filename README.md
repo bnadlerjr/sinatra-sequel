@@ -34,6 +34,13 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/bnadlerjr/sinatra-sequel.
 
+## Resources
+
+* [Source Code](https://github.com/bnadlerjr/sinatra-sequel)
+* [Bug Tracking](https://github.com/bnadlerjr/sinatra-sequel/issues)
+* [Discussion Forum](https://github.com/bnadlerjr/sinatra-sequel/discussions)
+* [Contribution Guidelines](https://github.com/bnadlerjr/sinatra-sequel/blob/main/CONTRIBUTING.md)
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
