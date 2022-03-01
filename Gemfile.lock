@@ -60,7 +60,7 @@ GEM
       rubocop-ast (>= 0.4.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.8.0)
+    rubocop-rspec (2.9.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
@@ -86,7 +86,7 @@ DEPENDENCIES
   rubocop (~> 1.24)
   rubocop-performance (~> 1.13)
   rubocop-rake (~> 0.6)
-  rubocop-rspec (~> 2.7)
+  rubocop-rspec (~> 2.9)
   sinatra-sequel!
   sqlite3 (~> 1.4)
 
