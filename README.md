@@ -27,7 +27,7 @@ Sinatra Sequel is implemented as a [Sinatra Extension](http://sinatrarb.com/exte
 
 ### Classic Application Example
 
-```
+```ruby
 require 'sinatra'
 require 'sinatra-sequel'
 require 'sqlite3'
@@ -42,7 +42,7 @@ end
 
 ### Modular Application Example
 
-```
+```ruby
 require 'sinatra/base'
 require 'sinatra-sequel'
 require 'sqlite3'
