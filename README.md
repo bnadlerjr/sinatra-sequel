@@ -60,7 +60,7 @@ end
 ```
 
 ### Rake Tasks
-TODO
+To see a list of available tasks run the `rake -T` command.
 
 ## Development
 
