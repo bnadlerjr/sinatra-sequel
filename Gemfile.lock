@@ -72,9 +72,9 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.2)
       tilt (~> 2.0)
-    sqlite3 (1.5.3-arm64-darwin)
-    sqlite3 (1.5.3-x86_64-darwin)
-    sqlite3 (1.5.3-x86_64-linux)
+    sqlite3 (1.5.4-arm64-darwin)
+    sqlite3 (1.5.4-x86_64-darwin)
+    sqlite3 (1.5.4-x86_64-linux)
     tilt (2.0.11)
     unicode-display_width (2.3.0)
 
